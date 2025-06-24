@@ -1,18 +1,18 @@
 
-# 📖 Greetings API
+# Greetings API
 
-A simple ASP.NET Core Web API project that provides personalized greeting messages via RESTful endpoints. The project integrates Entity Framework Core for database operations, MemoryCache for caching, and rate limiting for performance and security.
+An ASP.NET Core Web API project that provides greeting messages via RESTful endpoints. The project integrates Entity Framework Core for database operations, MemoryCache for caching, and rate limiting.
 
-## 📑 Features
+## Features
 
-- 📝 Create, read, and manage greeting messages.
-- 🗄️ Entity Framework Core integration for data persistence.
-- ⚡ In-memory caching with `IMemoryCache`.
-- 📉 Rate limiting to control API request load.
-- 🌐 Async/await API handling.
-- 📦 Includes sample HTTP request files (`Greetings.http`).
+- Create, read, and manage greeting messages.
+- Entity Framework Core integration for data persistence.
+- In-memory caching with `IMemoryCache`.
+- Rate limiting to control API request load.
+- Async/await API handling.
+- Includes sample HTTP request files (`Greetings.http`).
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **ASP.NET Core 8.0**
 - **Entity Framework Core**
@@ -20,7 +20,7 @@ A simple ASP.NET Core Web API project that provides personalized greeting messag
 - **SQLite (or your configured database)**
 - **.NET CLI / Visual Studio**
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 Greetings.sln
@@ -39,14 +39,14 @@ Greetings.sln
     └── Greetings.http
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
-### 📋 Prerequisites
+### Prerequisites
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - SQLite (or configure another database provider in `Program.cs` and `appsettings.json`)
 
-### 📥 Installation
+### Installation
 
 1. **Clone the repository**
 
@@ -73,21 +73,21 @@ Greetings.sln
    dotnet run --project Greetings
    ```
 
-## 📬 API Endpoints
+## API Endpoints
 
 | Method | Endpoint             | Description                        |
 |:--------|:---------------------|:------------------------------------|
 | `GET`   | `/api/greeting`       | Get greetings                  |
 | `POST`  | `/api/greeting`       | Add a new greeting                  |
 
-### 📑 Example GET Request
+### Example GET Request
 
 ```http
 GET https://localhost:{port}/api/greeting?name=John
 Content-Type: application/json
 ```
 
-### 📑 Example POST Request
+### Example POST Request
 
 ```http
 POST https://localhost:{port}/api/greeting
@@ -98,16 +98,16 @@ Content-Type: application/json
 }
 ```
 
-## 🧠 Caching & Rate Limiting
+## Caching & Rate Limiting
 
 - Uses `IMemoryCache` to cache frequently accessed greeting data for improved response times.
 - Rate limiting can be configured via middleware to control request bursts.
 
-## 📌 Notes
+## Notes
 
 - Modify `appsettings.json` for database connection settings.
 - Database migrations are already scaffolded in the `Migrations/` directory.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
