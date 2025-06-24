@@ -105,9 +105,4 @@ Content-Type: application/json
 
 ## Notes
 
-- Modify `appsettings.json` for database connection settings.
-- Database migrations are already scaffolded in the `Migrations/` directory.
 
-## License
-
-This project is licensed under the MIT License.
